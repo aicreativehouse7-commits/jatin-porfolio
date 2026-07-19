@@ -9,32 +9,32 @@
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 
     :root{
-      --black:       #050404;
-      --deep:        #0a0707;
-      --surface:     #100c0c;
-      --border:      #2e1f1a;
+      --black:       #0a0b0d;
+      --deep:        #0f1114;
+      --surface:     #151820;
+      --border:      #2a3040;
 
-      /* ── GOLD ── */
-      --gold:        #d4a843;
-      --gold-light:  #f0c55a;
-      --gold-bright: #ffd97a;
-      --gold-dim:    #8a6a28;
-      --gold-glow:   rgba(212,168,67,.22);
-      --gold-glow2:  rgba(212,168,67,.09);
+      /* ── BLUE (Wings of Freedom) ── */
+      --gold:        #3b82f6;
+      --gold-light:  #60a5fa;
+      --gold-bright: #93c5fd;
+      --gold-dim:    #1e40af;
+      --gold-glow:   rgba(59,130,246,.22);
+      --gold-glow2:  rgba(59,130,246,.09);
 
-      /* ── SILVER ── */
-      --silver:      #c8c8c8;
-      --silver-light:#efefef;
-      --silver-dim:  #888;
+      /* ── SILVER / STEEL ── */
+      --silver:      #c8cdd5;
+      --silver-light:#e8ecf0;
+      --silver-dim:  #6b7280;
 
-      /* ── DEEP RED ── */
-      --red:         #b83228;
-      --red-light:   #e04030;
-      --red-dim:     #7a1a10;
-      --red-glow:    rgba(184,50,40,.25);
-      --red-glow2:   rgba(184,50,40,.09);
+      /* ── CRIMSON (Titan marks) ── */
+      --red:         #dc2626;
+      --red-light:   #ef4444;
+      --red-dim:     #7f1d1d;
+      --red-glow:    rgba(220,38,38,.25);
+      --red-glow2:   rgba(220,38,38,.09);
 
-      --white: #f8f2ea;
+      --white: #f0f2f5;
     }
 
     html{scroll-behavior:smooth;}
@@ -61,7 +61,7 @@
     #cursor{position:fixed;width:10px;height:10px;background:var(--gold-light);border-radius:50%;
       pointer-events:none;z-index:9999;transform:translate(-50%,-50%);
       box-shadow:0 0 10px var(--gold),0 0 24px var(--gold-glow);}
-    #cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(201,168,76,.5);border-radius:50%;
+    #cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(59,130,246,.5);border-radius:50%;
       pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .25s,height .25s;}
 
     /* ── NAV ── */
@@ -69,7 +69,7 @@
       display:flex;justify-content:space-between;align-items:center;
       background:rgba(5,4,4,.95);backdrop-filter:blur(20px);
       border-bottom:1px solid var(--border);
-      box-shadow:0 1px 40px rgba(212,168,67,.08),0 1px 0 var(--red-dim);}
+      box-shadow:0 1px 40px rgba(59,130,246,.08),0 1px 0 var(--red-dim);}
     .nav-logo{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.12em;
       background:linear-gradient(135deg,var(--gold-light),var(--silver-light));
       -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
@@ -316,7 +316,7 @@
     /* ── FOOTER ── */
     footer{padding:22px 48px;border-top:1px solid var(--border);margin-top:4px;
       display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
-      background:linear-gradient(180deg,transparent,rgba(192,57,43,.025));}
+      background:linear-gradient(180deg,transparent,rgba(220,38,38,.025));}
     .footer-copy{font-size:11px;letter-spacing:.08em;color:var(--gold-dim);}
     .footer-count{font-family:'Space Mono',monospace;font-size:10px;color:var(--silver-dim);letter-spacing:.1em;}
 
